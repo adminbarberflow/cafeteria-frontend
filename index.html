@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Conheça a Nova Coffee e confira nosso cardápio digital."
+    >
+
+    <meta
+        name="theme-color"
+        content="#1a1410"
+    >
+
+    <title>Nova Coffee | Café para renovar o seu dia</title>
+
+    <link
+        rel="stylesheet"
+        href="./css/reset.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="./css/style.css"
+    >
+
+    <script
+        src="./js/site-data.js"
+        defer
+    ></script>
+
+    <script
+        src="./js/main.js"
+        defer
+    ></script>
+</head>
+
+<body>
+    <a
+        class="skip-link"
+        href="#conteudo-principal"
+    >
+        Ir para o conteúdo
+    </a>
+
+    <header class="site-header">
+        <div class="container site-header__content">
+            <a
+                class="brand"
+                href="#inicio"
+                aria-label="Nova Coffee — página inicial"
+            >
+                <span class="brand__name">nova</span>
+                <span class="brand__subtitle">coffee</span>
+            </a>
+
+            <button
+                class="menu-button"
+                type="button"
+                aria-label="Abrir menu de navegação"
+                aria-controls="main-navigation"
+                aria-expanded="false"
+            >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+
+            <nav
+                id="main-navigation"
+                class="main-navigation"
+                aria-label="Navegação principal"
+            >
+                <a href="#inicio">Início</a>
+                <a href="#cardapio">Cardápio</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#localizacao">Localização</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo-principal">
+        <section
+            id="inicio"
+            class="hero"
+            aria-labelledby="hero-title"
+        >
+            <div class="container hero__content">
+                <p class="eyebrow">
+                    Nova Coffee
+                </p>
+
+                <h1 id="hero-title">
+                    Uma pausa para renovar o seu dia.
+                </h1>
+
+                <p class="hero__description">
+                    Cafés, bebidas e sabores preparados para tornar
+                    cada momento ainda mais especial.
+                </p>
+
+                <div class="hero__actions">
+                    <a
+                        class="button button--primary"
+                        href="#cardapio"
+                    >
+                        Ver cardápio
+                    </a>
+
+                    <a
+                        class="button button--secondary"
+                        href="#sobre"
+                    >
+                        Conhecer a Nova Coffee
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section
+            id="cardapio"
+            class="section menu-section"
+            aria-labelledby="menu-title"
+        >
+            <div class="container">
+                <p class="eyebrow">
+                    Sabores para todos os momentos
+                </p>
+
+                <h2 id="menu-title">
+                    Nosso cardápio
+                </h2>
+
+                <p class="section-description">
+                    Produtos e valores apresentados exclusivamente
+                    para demonstração.
+                </p>
+
+                <div
+                    id="menu-categories"
+                    class="menu-categories"
+                    aria-label="Categorias do cardápio"
+                ></div>
+
+                <div
+                    id="menu-products"
+                    class="menu-grid"
+                    aria-live="polite"
+                ></div>
+            </div>
+        </section>
+
+        <section
+            id="sobre"
+            class="section about-section"
+            aria-labelledby="about-title"
+        >
+            <div class="container">
+                <p class="eyebrow">
+                    Sobre nós
+                </p>
+
+                <h2 id="about-title">
+                    Um novo espaço dentro da Nova Saúde
+                </h2>
+
+                <p>
+                    A Nova Coffee nasce como um ambiente pensado para
+                    proporcionar conforto, praticidade e bons momentos
+                    durante a rotina dos clientes.
+                </p>
+            </div>
+        </section>
+
+        <section
+            id="localizacao"
+            class="section location-section"
+            aria-labelledby="location-title"
+        >
+            <div class="container">
+                <p class="eyebrow">
+                    Visite-nos
+                </p>
+
+                <h2 id="location-title">
+                    Nova Coffee em Campo Grande
+                </h2>
+
+                <p>
+                    Localizada dentro de uma unidade da Nova Saúde.
+                    Endereço e horários serão atualizados com as
+                    informações oficiais.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                © <span id="current-year"></span> Nova Coffee.
+                Demonstração desenvolvida pela Souzas Dev.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

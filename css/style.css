@@ -503,8 +503,8 @@ h3 {
 .location-marker {
     position: absolute;
     z-index: 3;
-    top: 46%;
-    left: 63%;
+    top: 50%;
+    left: 50%;
     display: grid;
     width: 2.75rem;
     height: 2.75rem;
@@ -534,4 +534,5 @@ h3 {
 }
 
 /* ===== MARCADOR NOVA COFFEE: FIM ===== */
+
 

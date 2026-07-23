@@ -489,3 +489,49 @@ h3 {
         animation-duration: 0.01ms !important;
     }
 }
+
+/* ===== MARCADOR NOVA COFFEE: INÍCIO ===== */
+
+.location-map {
+    isolation: isolate;
+}
+
+.location-map iframe {
+    pointer-events: none;
+}
+
+.location-marker {
+    position: absolute;
+    z-index: 3;
+    top: 46%;
+    left: 63%;
+    display: grid;
+    width: 2.75rem;
+    height: 2.75rem;
+    place-items: center;
+    border: 2px solid var(--color-surface);
+    border-radius: 50%;
+    background: var(--color-primary);
+    box-shadow: 0 2px 6px rgba(37, 33, 30, 0.2);
+    font-size: 1.25rem;
+    line-height: 1;
+    pointer-events: none;
+    transform: translate(-50%, -100%);
+}
+
+.location-marker::after {
+    position: absolute;
+    z-index: -1;
+    bottom: -0.3rem;
+    left: 50%;
+    width: 0.65rem;
+    height: 0.65rem;
+    border-right: 2px solid var(--color-surface);
+    border-bottom: 2px solid var(--color-surface);
+    background: var(--color-primary);
+    content: "";
+    transform: translateX(-50%) rotate(45deg);
+}
+
+/* ===== MARCADOR NOVA COFFEE: FIM ===== */
+

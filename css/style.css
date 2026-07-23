@@ -490,21 +490,86 @@ h3 {
     }
 }
 
-/* ===== MARCADOR NOVA COFFEE: INÍCIO ===== */
+/* ===== MAPA FICTÍCIO: INÍCIO ===== */
 
-.location-map {
+.location-note {
+    margin-top: 1.25rem;
+    color: var(--color-text-muted);
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+.location-map--fictional {
+    position: relative;
+    min-height: 22rem;
     isolation: isolate;
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-small);
+    background: #f1efeb;
 }
 
-.location-map iframe {
-    pointer-events: none;
-}
-
-.location-marker {
+.location-map__label {
     position: absolute;
-    z-index: 3;
-    top: 50%;
-    left: 50%;
+    z-index: 4;
+    top: 1rem;
+    left: 1rem;
+    padding: 0.35rem 0.55rem;
+    border: 1px solid var(--color-border);
+    background: rgba(248, 247, 244, 0.94);
+    color: var(--color-text-muted);
+    font-size: 0.625rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.map-road {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    background: #ffffff;
+    box-shadow:
+        0 -1px 0 #d9d5cf,
+        0 1px 0 #d9d5cf;
+}
+
+.map-road--horizontal-one {
+    top: 34%;
+    left: -5%;
+    width: 110%;
+    height: 2.5rem;
+    transform: rotate(-4deg);
+}
+
+.map-road--horizontal-two {
+    top: 72%;
+    left: -5%;
+    width: 110%;
+    height: 2rem;
+    transform: rotate(3deg);
+}
+
+.map-road--vertical-one {
+    top: -10%;
+    left: 68%;
+    width: 2.25rem;
+    height: 120%;
+    transform: rotate(5deg);
+}
+
+.map-road--diagonal {
+    top: -15%;
+    left: 25%;
+    width: 1.75rem;
+    height: 135%;
+    transform: rotate(-31deg);
+}
+
+.location-map--fictional .location-marker {
+    position: absolute;
+    z-index: 5;
+    top: 54%;
+    left: 57%;
     display: grid;
     width: 2.75rem;
     height: 2.75rem;
@@ -512,14 +577,13 @@ h3 {
     border: 2px solid var(--color-surface);
     border-radius: 50%;
     background: var(--color-primary);
-    box-shadow: 0 2px 6px rgba(37, 33, 30, 0.2);
-    font-size: 1.25rem;
+    color: #ffffff;
+    font-size: 1.125rem;
     line-height: 1;
-    pointer-events: none;
     transform: translate(-50%, -100%);
 }
 
-.location-marker::after {
+.location-map--fictional .location-marker::after {
     position: absolute;
     z-index: -1;
     bottom: -0.3rem;
@@ -533,6 +597,17 @@ h3 {
     transform: translateX(-50%) rotate(45deg);
 }
 
-/* ===== MARCADOR NOVA COFFEE: FIM ===== */
+.location-map__caption {
+    position: absolute;
+    z-index: 4;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.45rem 0.65rem;
+    border: 1px solid var(--color-border);
+    background: rgba(248, 247, 244, 0.94);
+    color: var(--color-text);
+    font-size: 0.6875rem;
+}
 
+/* ===== MAPA FICTÍCIO: FIM ===== */
 

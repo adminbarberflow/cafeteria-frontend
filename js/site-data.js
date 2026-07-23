@@ -1,6 +1,6 @@
 ﻿"use strict";
 
-window.NOVA_COFFEE_DATA = {
+window.CAFETERIA_DATA = {
     categories: [
         {
             id: "todos",
@@ -31,7 +31,7 @@ window.NOVA_COFFEE_DATA = {
     products: [
         {
             id: 1,
-            name: "Espresso Nova",
+            name: "Espresso da Casa",
             description: "Café espresso encorpado, aromático e preparado na hora.",
             price: 7,
             category: "cafes",
@@ -56,7 +56,7 @@ window.NOVA_COFFEE_DATA = {
         },
         {
             id: 4,
-            name: "Cappuccino Nova",
+            name: "Cappuccino da Casa",
             description: "Espresso, leite vaporizado, chocolate e um toque de canela.",
             price: 12,
             category: "cafes",
@@ -132,7 +132,7 @@ window.NOVA_COFFEE_DATA = {
         },
         {
             id: 13,
-            name: "Cookie Nova",
+            name: "Cookie Artesanal",
             description: "Cookie artesanal com gotas de chocolate.",
             price: 8,
             category: "doces",
@@ -149,7 +149,7 @@ window.NOVA_COFFEE_DATA = {
         {
             id: 15,
             name: "Combo Pausa Rápida",
-            description: "Espresso Nova acompanhado de pão de queijo.",
+            description: "Espresso da Casa acompanhado de pão de queijo.",
             price: 14,
             category: "combos",
             image: "./assets/images/products/combo.jpg",
@@ -157,7 +157,7 @@ window.NOVA_COFFEE_DATA = {
         },
         {
             id: 16,
-            name: "Combo Nova Manhã",
+            name: "Combo Bom Dia",
             description: "Café com leite acompanhado de croissant recheado.",
             price: 20,
             category: "combos",
@@ -166,7 +166,7 @@ window.NOVA_COFFEE_DATA = {
         {
             id: 17,
             name: "Combo Momento Doce",
-            description: "Cappuccino Nova acompanhado de brownie de chocolate.",
+            description: "Cappuccino da Casa acompanhado de brownie de chocolate.",
             price: 22,
             category: "combos",
             image: "./assets/images/products/cake.jpg",
@@ -174,3 +174,4 @@ window.NOVA_COFFEE_DATA = {
         }
     ]
 };
+

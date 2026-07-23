@@ -1,6 +1,6 @@
-﻿# Nova Coffee — Frontend
+﻿# Cafeteria Conceito — Frontend
 
-Interface pública da demonstração do site Nova Coffee.
+Interface pública da demonstração do site Cafeteria Conceito.
 
 ## Tecnologias
 
@@ -11,3 +11,4 @@ Interface pública da demonstração do site Nova Coffee.
 ## Status
 
 Estruturação inicial.
+

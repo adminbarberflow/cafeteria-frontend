@@ -1,6 +1,6 @@
 ﻿"use strict";
 
-const siteData = window.NOVA_COFFEE_DATA ?? {
+const siteData = window.CAFETERIA_DATA ?? {
     categories: [],
     products: []
 };
@@ -329,5 +329,6 @@ document.addEventListener(
 updateCurrentYear();
 renderCategories();
 renderProducts();
+
 
 

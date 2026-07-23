@@ -128,7 +128,7 @@ function createProductCard(product) {
 
     image.className = "product-card__image";
     image.src = product.image;
-    image.alt = "";
+    image.alt = `Imagem ilustrativa de ${product.name}`;
     image.loading = "lazy";
     image.decoding = "async";
 
@@ -329,4 +329,5 @@ document.addEventListener(
 updateCurrentYear();
 renderCategories();
 renderProducts();
+
 

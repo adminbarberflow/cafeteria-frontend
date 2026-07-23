@@ -12,3 +12,9 @@ Interface pública da demonstração do site Cafeteria Conceito.
 
 Estruturação inicial.
 
+
+## Demonstração online
+
+Acesse a versão publicada:
+
+https://adminbarberflow.github.io/cafeteria-frontend/

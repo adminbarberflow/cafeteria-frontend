@@ -1,0 +1,219 @@
+﻿.demo-notice {
+    padding: 0.625rem 1rem;
+    border-bottom: 1px solid var(--color-border);
+    background: var(--color-primary);
+    color: var(--color-background);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.menu-result-count {
+    margin-top: 1rem;
+    color: var(--color-text-muted);
+    font-size: 0.875rem;
+}
+
+.category-button {
+    flex: 0 0 auto;
+    min-height: 2.75rem;
+    padding: 0.625rem 1.125rem;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    transition:
+        background var(--transition),
+        border-color var(--transition),
+        color var(--transition),
+        transform var(--transition);
+}
+
+.category-button:hover,
+.category-button:focus-visible {
+    border-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+.category-button:active {
+    transform: scale(0.97);
+}
+
+.category-button.is-active {
+    border-color: var(--color-primary);
+    background: var(--color-primary);
+    color: var(--color-background);
+}
+
+.product-card {
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-large);
+    background: var(--color-background);
+    transition:
+        border-color var(--transition),
+        transform var(--transition);
+}
+
+.product-card:hover {
+    border-color: rgba(199, 161, 122, 0.55);
+    transform: translateY(-0.25rem);
+}
+
+.product-card__visual {
+    position: relative;
+    display: grid;
+    min-height: 12rem;
+    place-items: center;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(199, 161, 122, 0.26),
+            transparent 62%
+        ),
+        linear-gradient(
+            135deg,
+            #33261f,
+            #1b1512
+        );
+}
+
+.product-card__visual[data-category="gelados"] {
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(184, 205, 214, 0.2),
+            transparent 62%
+        ),
+        linear-gradient(
+            135deg,
+            #293033,
+            #171c1e
+        );
+}
+
+.product-card__visual[data-category="salgados"] {
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(214, 184, 133, 0.24),
+            transparent 62%
+        ),
+        linear-gradient(
+            135deg,
+            #362b20,
+            #1d1813
+        );
+}
+
+.product-card__visual[data-category="doces"] {
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(182, 125, 98, 0.28),
+            transparent 62%
+        ),
+        linear-gradient(
+            135deg,
+            #35231f,
+            #1c1412
+        );
+}
+
+.product-card__visual[data-category="combos"] {
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(199, 161, 122, 0.3),
+            transparent 62%
+        ),
+        linear-gradient(
+            135deg,
+            #3a2b22,
+            #1b1512
+        );
+}
+
+.product-card__icon {
+    font-size: 4rem;
+    filter: drop-shadow(
+        0 1rem 1.5rem rgba(0, 0, 0, 0.3)
+    );
+    transform: translateY(0);
+    transition: transform var(--transition);
+}
+
+.product-card:hover .product-card__icon {
+    transform: translateY(-0.25rem) scale(1.05);
+}
+
+.product-card__badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: 0.35rem 0.65rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 999px;
+    background: rgba(23, 18, 15, 0.8);
+    color: var(--color-text);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    backdrop-filter: blur(0.5rem);
+}
+
+.product-card__content {
+    padding: 1.25rem;
+}
+
+.product-card__meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.product-card__category {
+    color: var(--color-primary);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.product-card__price {
+    color: var(--color-text);
+    font-size: 1rem;
+}
+
+.product-card__title {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.product-card__description {
+    margin-top: 0.75rem;
+    color: var(--color-text-muted);
+    font-size: 0.9375rem;
+}
+
+.menu-empty-state {
+    grid-column: 1 / -1;
+    padding: 2rem;
+    border: 1px dashed var(--color-border);
+    border-radius: var(--radius-medium);
+    color: var(--color-text-muted);
+    text-align: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .product-card,
+    .product-card__icon,
+    .category-button {
+        transition: none;
+    }
+}

@@ -30,6 +30,11 @@
         href="./css/style.css"
     >
 
+    <link
+        rel="stylesheet"
+        href="./css/components.css"
+    >
+
     <script
         src="./js/site-data.js"
         defer
@@ -42,6 +47,9 @@
 </head>
 
 <body>
+    <aside class="demo-notice">
+        Projeto demonstrativo — produtos, preços e informações ilustrativos.
+    </aside>
     <a
         class="skip-link"
         href="#conteudo-principal"
@@ -148,6 +156,12 @@
                     aria-label="Categorias do cardápio"
                 ></div>
 
+                <p
+                    id="menu-result-count"
+                    class="menu-result-count"
+                    aria-live="polite"
+                ></p>
+
                 <div
                     id="menu-products"
                     class="menu-grid"
@@ -211,3 +225,6 @@
     </footer>
 </body>
 </html>
+
+
+

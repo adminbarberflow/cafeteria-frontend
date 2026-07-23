@@ -217,3 +217,91 @@
         transition: none;
     }
 }
+
+/* ========================================
+   IMAGENS NOVA COFFEE
+======================================== */
+
+.hero {
+    background-image:
+        linear-gradient(
+            to top,
+            rgba(23, 18, 15, 1) 0%,
+            rgba(23, 18, 15, 0.82) 35%,
+            rgba(23, 18, 15, 0.35) 100%
+        ),
+        url("../assets/images/hero/hero-cafe.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product-card__visual {
+    position: relative;
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: var(--color-surface-light);
+}
+
+.product-card__visual::after {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    background:
+        linear-gradient(
+            to top,
+            rgba(23, 18, 15, 0.3),
+            transparent 55%
+        );
+    content: "";
+    pointer-events: none;
+}
+
+.product-card__image {
+    position: absolute;
+    z-index: 0;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition:
+        transform 500ms ease,
+        filter 300ms ease;
+}
+
+.product-card:hover .product-card__image {
+    transform: scale(1.05);
+}
+
+.product-card__badge {
+    z-index: 2;
+}
+
+.product-card__visual.is-image-unavailable {
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(199, 161, 122, 0.25),
+            transparent 65%
+        ),
+        var(--color-surface-light);
+}
+
+.product-card__visual.is-image-unavailable::before {
+    position: relative;
+    z-index: 2;
+    color: var(--color-text-muted);
+    content: "Imagem ilustrativa";
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .product-card__image {
+        transition: none;
+    }
+}

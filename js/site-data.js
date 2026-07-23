@@ -35,7 +35,7 @@ window.NOVA_COFFEE_DATA = {
             description: "Café espresso encorpado, aromático e preparado na hora.",
             price: 7,
             category: "cafes",
-            icon: "☕",
+            image: "./assets/images/products/coffee-hot.jpg",
             badge: "Clássico"
         },
         {
@@ -44,7 +44,7 @@ window.NOVA_COFFEE_DATA = {
             description: "Café tradicional com aroma marcante e sabor equilibrado.",
             price: 8,
             category: "cafes",
-            icon: "☕"
+            image: "./assets/images/products/coffee-hot.jpg"
         },
         {
             id: 3,
@@ -52,7 +52,7 @@ window.NOVA_COFFEE_DATA = {
             description: "Café espresso combinado com leite quente e cremoso.",
             price: 9,
             category: "cafes",
-            icon: "🥛"
+            image: "./assets/images/products/coffee-hot.jpg"
         },
         {
             id: 4,
@@ -60,7 +60,7 @@ window.NOVA_COFFEE_DATA = {
             description: "Espresso, leite vaporizado, chocolate e um toque de canela.",
             price: 12,
             category: "cafes",
-            icon: "☕",
+            image: "./assets/images/products/coffee-hot.jpg",
             badge: "Mais pedido"
         },
         {
@@ -69,7 +69,7 @@ window.NOVA_COFFEE_DATA = {
             description: "Espresso com leite cremoso e chocolate.",
             price: 14,
             category: "cafes",
-            icon: "🍫"
+            image: "./assets/images/products/chocolate.jpg"
         },
         {
             id: 6,
@@ -77,7 +77,7 @@ window.NOVA_COFFEE_DATA = {
             description: "Café gelado, leite e gelo para uma pausa refrescante.",
             price: 13,
             category: "gelados",
-            icon: "🧊",
+            image: "./assets/images/products/coffee-iced.jpg",
             badge: "Refrescante"
         },
         {
@@ -86,7 +86,7 @@ window.NOVA_COFFEE_DATA = {
             description: "Café gelado com leite, chocolate e bastante cremosidade.",
             price: 16,
             category: "gelados",
-            icon: "🧋"
+            image: "./assets/images/products/coffee-iced.jpg"
         },
         {
             id: 8,
@@ -94,7 +94,7 @@ window.NOVA_COFFEE_DATA = {
             description: "Bebida cremosa de chocolate servida com gelo.",
             price: 14,
             category: "gelados",
-            icon: "🍫"
+            image: "./assets/images/products/chocolate.jpg"
         },
         {
             id: 9,
@@ -102,7 +102,7 @@ window.NOVA_COFFEE_DATA = {
             description: "Porção quentinha de pão de queijo, crocante por fora.",
             price: 7,
             category: "salgados",
-            icon: "🧀"
+            image: "./assets/images/products/pao-de-queijo.jpg"
         },
         {
             id: 10,
@@ -110,7 +110,7 @@ window.NOVA_COFFEE_DATA = {
             description: "Croissant recheado e levemente aquecido.",
             price: 14,
             category: "salgados",
-            icon: "🥐",
+            image: "./assets/images/products/croissant.jpg",
             badge: "Especial"
         },
         {
@@ -119,7 +119,7 @@ window.NOVA_COFFEE_DATA = {
             description: "Pão macio com recheio leve, fresco e saboroso.",
             price: 15,
             category: "salgados",
-            icon: "🥪"
+            image: "./assets/images/products/sandwich.jpg"
         },
         {
             id: 12,
@@ -127,7 +127,7 @@ window.NOVA_COFFEE_DATA = {
             description: "Brownie macio com sabor intenso de chocolate.",
             price: 10,
             category: "doces",
-            icon: "🍫",
+            image: "./assets/images/products/brownie.jpg",
             badge: "Favorito"
         },
         {
@@ -136,7 +136,7 @@ window.NOVA_COFFEE_DATA = {
             description: "Cookie artesanal com gotas de chocolate.",
             price: 8,
             category: "doces",
-            icon: "🍪"
+            image: "./assets/images/products/cookie.jpg"
         },
         {
             id: 14,
@@ -144,7 +144,7 @@ window.NOVA_COFFEE_DATA = {
             description: "Uma fatia generosa do sabor selecionado para o dia.",
             price: 12,
             category: "doces",
-            icon: "🍰"
+            image: "./assets/images/products/cake.jpg"
         },
         {
             id: 15,
@@ -152,7 +152,7 @@ window.NOVA_COFFEE_DATA = {
             description: "Espresso Nova acompanhado de pão de queijo.",
             price: 14,
             category: "combos",
-            icon: "☕",
+            image: "./assets/images/products/combo.jpg",
             badge: "Economize"
         },
         {
@@ -161,7 +161,7 @@ window.NOVA_COFFEE_DATA = {
             description: "Café com leite acompanhado de croissant recheado.",
             price: 20,
             category: "combos",
-            icon: "🥐"
+            image: "./assets/images/products/croissant.jpg"
         },
         {
             id: 17,
@@ -169,7 +169,7 @@ window.NOVA_COFFEE_DATA = {
             description: "Cappuccino Nova acompanhado de brownie de chocolate.",
             price: 22,
             category: "combos",
-            icon: "🍰",
+            image: "./assets/images/products/cake.jpg",
             badge: "Sugestão"
         }
     ]

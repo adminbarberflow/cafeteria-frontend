@@ -123,13 +123,27 @@ function createProductCard(product) {
     const visual = document.createElement("div");
     visual.className = "product-card__visual";
     visual.dataset.category = product.category;
-    visual.setAttribute("aria-hidden", "true");
 
-    const icon = document.createElement("span");
-    icon.className = "product-card__icon";
-    icon.textContent = product.icon;
+    const image = document.createElement("img");
 
-    visual.append(icon);
+    image.className = "product-card__image";
+    image.src = product.image;
+    image.alt = "";
+    image.loading = "lazy";
+    image.decoding = "async";
+
+    image.addEventListener(
+        "error",
+        () => {
+            image.remove();
+            visual.classList.add("is-image-unavailable");
+        },
+        {
+            once: true
+        }
+    );
+
+    visual.append(image);
 
     if (product.badge) {
         const badge = document.createElement("span");
@@ -315,3 +329,4 @@ document.addEventListener(
 updateCurrentYear();
 renderCategories();
 renderProducts();
+

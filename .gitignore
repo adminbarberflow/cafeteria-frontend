@@ -1,0 +1,18 @@
+﻿# Configurações locais
+.vscode/
+
+# Variáveis de ambiente
+.env
+.env.local
+
+# Dependências e ferramentas
+node_modules/
+.vercel/
+
+# Arquivos temporários
+*.log
+*.tmp
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
